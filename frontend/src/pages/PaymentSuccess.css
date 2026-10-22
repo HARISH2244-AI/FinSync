@@ -1,0 +1,49 @@
+.success-page {
+  min-height: 100vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; background: var(--color-bg); text-align: center; padding: 24px;
+}
+
+.success-icon {
+  width: 84px; height: 84px; border-radius: 50%;
+  background: #DCFCE7; color: #16A34A;
+  display: flex; align-items: center; justify-content: center; margin-bottom: 14px;
+}
+
+.success-title { font-size: 18px; font-weight: 700; color: var(--color-text); margin: 0; }
+.success-amount { font-size: 32px; font-weight: 800; color: var(--color-text); margin: 6px 0 0; }
+.success-merchant { font-size: 14px; color: var(--color-text-muted); margin: 2px 0; }
+.success-date { font-size: 12px; color: var(--color-text-muted); margin: 0 0 20px; }
+
+.success-txid-box {
+  background: #fff; border: 1px solid var(--color-border); border-radius: 14px;
+  padding: 14px 18px; width: 100%; max-width: 320px; box-shadow: var(--shadow-card);
+}
+.success-txid-box span:first-child { font-size: 11px; color: var(--color-text-muted); }
+.success-txid-row {
+  display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 4px;
+}
+.success-txid-row span { font-size: 14px; font-weight: 600; color: var(--color-text); letter-spacing: 0.5px; }
+.success-txid-row button {
+  background: var(--color-primary-light); border: none; color: var(--color-primary);
+  width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.success-copied { display: block; font-size: 11px; color: var(--color-success); margin-top: 4px; }
+
+.success-receipt-toggle {
+  display: flex; align-items: center; gap: 6px; background: none; border: none; cursor: pointer;
+  color: var(--color-primary); font-size: 13px; font-weight: 600; margin: 16px 0;
+}
+
+.success-receipt-details {
+  background: #fff; border: 1px solid var(--color-border); border-radius: 14px;
+  padding: 16px; width: 100%; max-width: 320px; text-align: left; margin-bottom: 16px;
+}
+.success-receipt-details div { display: flex; justify-content: space-between; font-size: 13px; padding: 6px 0; color: var(--color-text); }
+.status-success { color: var(--color-success); font-weight: 600; }
+
+.success-done {
+  width: 100%; max-width: 320px; margin-top: 12px;
+  background: linear-gradient(135deg, #5B3FD9, #4527A8); color: #fff; border: none;
+  padding: 14px; border-radius: 999px; font-weight: 600; font-size: 15px; cursor: pointer;
+}

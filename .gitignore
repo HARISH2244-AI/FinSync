@@ -1,0 +1,27 @@
+# Java / Maven build output
+backend/target/
+backend/*.log
+.mvn/
+*.class
+
+# Node / React build output
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# Environment variables & secrets
+*.env
+*.env.*
+!*.env.example
+application-secret.properties
+application-local.properties
+
+# IDE / Editor artifacts
+.vscode/
+.idea/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+.magnetic-button {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  padding: 14px 32px; border: none; border-radius: 999px;
+  background: linear-gradient(135deg, #5B3FD9, #4527A8);
+  color: #fff; font-weight: 600; font-size: 15px; cursor: pointer;
+  will-change: transform;
+  box-shadow: 0 6px 16px rgba(91, 63, 217, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+.magnetic-button:hover { box-shadow: 0 10px 24px rgba(91, 63, 217, 0.4); }
+.magnetic-button-label { pointer-events: none; }

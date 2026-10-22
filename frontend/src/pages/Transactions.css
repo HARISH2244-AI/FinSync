@@ -1,0 +1,67 @@
+.transactions-content { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+.transaction-form {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.form-row { display: flex; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.form-row input, .form-row select {
+  flex: 1;
+  min-width: 140px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background: #F9FAFC;
+  color: var(--color-text);
+  font-size: 14px;
+  outline: none;
+}
+.form-row input:focus, .form-row select:focus { border-color: var(--color-primary); background: #fff; }
+
+.form-actions { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+.cancel-edit {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.transaction-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  margin-bottom: 10px;
+}
+
+.transaction-category { font-weight: 600; color: var(--color-text); }
+.transaction-desc { color: var(--color-text-muted); font-size: 13px; }
+.transaction-date { color: var(--color-text-muted); font-size: 12px; }
+
+.transaction-actions { display: flex; align-items: center; gap: 12px; }
+.transaction-actions button {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.transaction-actions button:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+.transaction-amount.positive { color: var(--color-success); font-weight: 600; }
+.transaction-amount.negative { color: var(--color-danger); font-weight: 600; }
+
+.empty-state { color: var(--color-text-muted); text-align: center; padding: 40px 0; }

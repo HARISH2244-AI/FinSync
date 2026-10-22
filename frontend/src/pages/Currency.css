@@ -1,0 +1,55 @@
+.currency-page { max-width: 500px; margin: 0 auto; padding: 20px; }
+
+.currency-form {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.currency-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #F9FAFC;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 4px;
+}
+
+.currency-input-row input, .currency-input-row select {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  color: var(--color-text);
+}
+
+.currency-fixed { font-weight: 600; color: var(--color-text-muted); }
+.currency-result-preview { font-weight: 700; color: var(--color-primary); font-size: 16px; }
+.currency-arrow { text-align: center; color: var(--color-text-muted); margin: 4px 0; }
+
+.currency-form .magnetic-button { width: 100%; margin-top: 16px; }
+
+.currency-result-card {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-primary-light);
+  text-align: center;
+}
+.currency-result-card p { margin: 0; color: var(--color-text); font-weight: 600; }
+.currency-rate { font-size: 12px; color: var(--color-text-muted); font-weight: 400 !important; margin-top: 4px !important; }
+
+.wallet-section-title { font-size: 16px; margin: 0 0 12px; color: var(--color-text); }
+
+.currency-rates-grid { margin-top: 24px; }
+.currency-rates-grid ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.currency-rates-grid li {
+  display: flex; justify-content: space-between;
+  background: #fff; border: 1px solid var(--color-border); border-radius: 10px;
+  padding: 10px 14px; font-size: 13px; color: var(--color-text);
+}

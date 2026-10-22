@@ -1,0 +1,203 @@
+.phonepe-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px; background: linear-gradient(135deg, #5B3FD9, #4527A8); color: #fff;
+}
+
+.phonepe-greeting { display: flex; align-items: center; gap: 12px; }
+
+.phonepe-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(255,255,255,0.2); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 16px;
+}
+
+.phonepe-hello { margin: 0; font-weight: 600; font-size: 16px; }
+.phonepe-sub { margin: 0; font-size: 12px; opacity: 0.85; }
+
+.phonepe-header-icons { display: flex; align-items: center; gap: 6px; }
+
+.icon-btn {
+  position: relative; background: transparent; border: none; color: #fff;
+  padding: 8px; border-radius: 50%; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.icon-btn:hover { background: rgba(255,255,255,0.12); }
+
+.icon-badge {
+  position: absolute; top: 2px; right: 2px;
+  background: #EF4444; color: #fff; font-size: 10px; font-weight: 700;
+  width: 16px; height: 16px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.profile-menu-wrap { position: relative; }
+.profile-dropdown {
+  position: absolute; top: 44px; right: 0; background: #fff; color: var(--color-text);
+  border-radius: 10px; box-shadow: var(--shadow-card-hover); overflow: hidden; z-index: 20;
+  min-width: 120px;
+}
+.profile-dropdown button {
+  width: 100%; text-align: left; padding: 12px 16px; border: none; background: none;
+  cursor: pointer; font-size: 13px; color: var(--color-danger);
+}
+.profile-dropdown button:hover { background: var(--color-primary-light); }
+
+.phonepe-banner {
+  position: relative;
+  margin: 16px 20px; padding: 24px;
+  border-radius: 20px; color: #fff; overflow: hidden;
+  background: linear-gradient(135deg, #4527A8, #2E1B6B);
+}
+.phonepe-banner-title { margin: 0; font-size: 28px; font-weight: 800; }
+.phonepe-banner-tagline { margin: 2px 0 8px; font-size: 14px; opacity: 0.9; }
+.phonepe-banner-links { margin: 0; font-size: 11px; opacity: 0.7; }
+.phonepe-banner-side { position: absolute; top: 24px; right: 24px; max-width: 140px; font-size: 12px; text-align: right; opacity: 0.85; }
+.phonepe-banner-dots { display: flex; gap: 6px; margin-top: 16px; }
+.dot-indicator { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.35); }
+.dot-indicator.active { background: #fff; width: 16px; border-radius: 999px; }
+
+.phonepe-wallet-card {
+  margin: 0 20px 16px; padding: 20px; border-radius: 18px;
+  background: #fff; border: 1px solid var(--color-border); box-shadow: var(--shadow-card);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+
+.phonepe-wallet-left { display: flex; align-items: center; gap: 14px; }
+.phonepe-wallet-icon {
+  width: 48px; height: 48px; border-radius: 14px; background: var(--color-primary-light);
+  color: var(--color-primary); display: flex; align-items: center; justify-content: center;
+}
+.phonepe-wallet-label { margin: 0; font-size: 12px; color: var(--color-text-muted); }
+.phonepe-wallet-value { margin: 2px 0 0; font-size: 24px; font-weight: 700; color: var(--color-text); }
+
+.phonepe-wallet-actions { display: flex; gap: 20px; }
+.wallet-round-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  background: none; border: none; cursor: pointer; text-decoration: none;
+  font-size: 11px; color: var(--color-text); font-weight: 500;
+}
+.wallet-round-btn svg {
+  width: 44px; height: 44px; padding: 12px; border-radius: 50%; box-sizing: border-box;
+}
+.wallet-round-btn.green svg { background: #DCFCE7; color: #16A34A; }
+.wallet-round-btn.purple svg { background: var(--color-primary-light); color: var(--color-primary); }
+.wallet-round-btn.red svg { background: #FEE2E2; color: #EF4444; }
+
+.phonepe-quick-actions {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;
+  margin: 0 20px 16px; padding: 16px; background: #fff; border-radius: 18px;
+  border: 1px solid var(--color-border); box-shadow: var(--shadow-card);
+}
+
+.phonepe-action {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  text-decoration: none; padding: 4px;
+}
+
+.phonepe-action-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.phonepe-action-icon.purple { background: var(--color-primary-light); color: var(--color-primary); }
+.phonepe-action-icon.blue { background: #DBEAFE; color: #3B82F6; }
+.phonepe-action-icon.orange { background: #FFEDD5; color: #F97316; }
+.phonepe-action-icon.green { background: #DCFCE7; color: #16A34A; }
+
+.phonepe-action-label { font-size: 11px; font-weight: 600; color: var(--color-text); text-align: center; }
+.phonepe-action-sub { font-size: 9px; color: var(--color-text-muted); text-align: center; }
+
+.phonepe-two-col {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 20px 16px;
+}
+
+.phonepe-card {
+  background: #fff; border: 1px solid var(--color-border); border-radius: 18px;
+  padding: 18px; box-shadow: var(--shadow-card);
+}
+
+.phonepe-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.phonepe-card-header h2 { margin: 0; font-size: 15px; color: var(--color-text); }
+.phonepe-card-header a { font-size: 12px; text-decoration: none; }
+
+.period-pill {
+  font-size: 11px; background: var(--color-primary-light); color: var(--color-primary);
+  padding: 4px 10px; border-radius: 999px; font-weight: 600;
+}
+
+.phonepe-list { list-style: none; padding: 0; margin: 0; }
+
+.phonepe-list-row {
+  display: flex; align-items: center; gap: 10px; padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.phonepe-list-row:last-child { border-bottom: none; }
+
+.phonepe-list-icon {
+  width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.phonepe-list-icon.income { background: #DCFCE7; color: #16A34A; }
+.phonepe-list-icon.expense { background: #FEE2E2; color: #EF4444; }
+
+.phonepe-list-info { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.phonepe-list-title { font-size: 13px; font-weight: 600; color: var(--color-text); }
+.phonepe-list-desc { font-size: 11px; color: var(--color-text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.phonepe-list-amount.positive { color: var(--color-success); font-weight: 600; font-size: 13px; }
+.phonepe-list-amount.negative { color: var(--color-danger); font-weight: 600; font-size: 13px; }
+
+.donut-wrap { display: flex; align-items: center; gap: 16px; }
+
+.donut-chart {
+  width: 110px; height: 110px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; position: relative;
+}
+.donut-center {
+  width: 70px; height: 70px; border-radius: 50%; background: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.donut-total { font-size: 14px; font-weight: 700; color: var(--color-text); }
+.donut-total-label { font-size: 9px; color: var(--color-text-muted); }
+
+.donut-legend { list-style: none; padding: 0; margin: 0; flex: 1; font-size: 11px; }
+.donut-legend li { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; color: var(--color-text); }
+.donut-legend li strong { margin-left: auto; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+.spending-strip {
+  margin-top: 16px; display: flex; align-items: center; gap: 12px;
+  background: var(--color-primary-light); border-radius: 12px; padding: 12px 14px;
+}
+.spending-strip-icon {
+  width: 32px; height: 32px; border-radius: 50%; background: #fff; color: var(--color-primary);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.spending-strip p { margin: 0; font-size: 12px; color: var(--color-text); }
+.spending-strip span { font-size: 10px; color: var(--color-text-muted); }
+.spending-strip-amount { margin-left: auto; font-size: 12px; font-weight: 700; color: var(--color-success); }
+.spending-strip.up .spending-strip-amount { color: var(--color-danger); }
+
+.mini-progress-row { display: flex; align-items: center; gap: 12px; }
+.mini-progress-icon {
+  width: 38px; height: 38px; border-radius: 10px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 16px;
+  background: var(--color-primary-light);
+}
+.mini-progress-info { flex: 1; min-width: 0; }
+.mini-progress-info p { margin: 0 0 2px; font-size: 13px; font-weight: 600; color: var(--color-text); }
+.mini-progress-info span { font-size: 11px; color: var(--color-text-muted); }
+.mini-progress-track { height: 6px; background: var(--color-primary-light); border-radius: 999px; margin-top: 6px; overflow: hidden; }
+.mini-progress-fill { height: 100%; border-radius: 999px; }
+.mini-progress-fill.goal { background: var(--color-primary); }
+.mini-progress-fill.budget { background: var(--color-success); }
+.mini-progress-fill.over { background: var(--color-danger); }
+.mini-progress-pct { font-size: 12px; font-weight: 700; color: var(--color-text); }
+
+.empty-state { color: var(--color-text-muted); text-align: center; padding: 16px 0; font-size: 13px; }
+
+@media (max-width: 720px) {
+  .phonepe-quick-actions { grid-template-columns: repeat(3, 1fr); }
+  .phonepe-two-col { grid-template-columns: 1fr; }
+  .phonepe-banner-side { display: none; }
+}

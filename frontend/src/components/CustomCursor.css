@@ -1,0 +1,20 @@
+body.custom-cursor-active,
+body.custom-cursor-active * { cursor: none !important; }
+
+.cursor-dot {
+  position: fixed; top: 0; left: 0; width: 8px; height: 8px;
+  margin-left: -4px; margin-top: -4px;
+  background: #5B3FD9; border-radius: 50%;
+  pointer-events: none; z-index: 9999; will-change: transform;
+}
+
+.cursor-ring {
+  position: fixed; top: 0; left: 0; width: 36px; height: 36px;
+  margin-left: -18px; margin-top: -18px;
+  border: 2px solid #5B3FD9; border-radius: 50%;
+  pointer-events: none; z-index: 9998; will-change: transform;
+}
+
+@media (pointer: coarse) {
+  .cursor-dot, .cursor-ring { display: none; }
+}

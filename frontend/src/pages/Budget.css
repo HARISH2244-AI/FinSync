@@ -1,0 +1,81 @@
+.budget-page { max-width: 600px; margin: 0 auto; padding: 20px; }
+.budget-page section { margin-bottom: 32px; }
+
+.budget-form {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-card);
+}
+.budget-form input, .budget-form select {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background: #F9FAFC;
+  font-size: 14px;
+  outline: none;
+}
+.budget-form input:focus, .budget-form select:focus { border-color: var(--color-primary); background: #fff; }
+
+.wallet-section-title { font-size: 16px; margin: 0 0 12px; color: var(--color-text); }
+
+.budget-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+
+.budget-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.budget-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+.budget-card-header button {
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.budget-bar-track { height: 8px; background: var(--color-primary-light); border-radius: 999px; overflow: hidden; }
+.budget-bar-fill { height: 100%; background: var(--color-primary); border-radius: 999px; transition: width 0.4s ease; }
+.budget-bar-fill.over { background: var(--color-danger); }
+.budget-bar-fill.goal { background: var(--color-success); }
+
+.budget-card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+.over-text { color: var(--color-danger); font-weight: 600; }
+
+.goal-contribute {
+  margin-top: 10px;
+  background: var(--color-primary-light);
+  border: none;
+  color: var(--color-primary);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.empty-state { color: var(--color-text-muted); text-align: center; padding: 20px 0; font-size: 13px; }
