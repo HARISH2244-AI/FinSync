@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/currency")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://fin-sync-alpha.vercel.app"})
 public class CurrencyController {
 
     private final RestTemplate restTemplate;

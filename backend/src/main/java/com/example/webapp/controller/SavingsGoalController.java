@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/savings-goals")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://fin-sync-alpha.vercel.app"})
 public class SavingsGoalController {
 
     private final SavingsGoalRepository savingsGoalRepository;

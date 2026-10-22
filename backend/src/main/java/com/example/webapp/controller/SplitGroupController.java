@@ -20,7 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/split-groups")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://fin-sync-alpha.vercel.app"})
 public class SplitGroupController {
 
     private final SplitGroupRepository splitGroupRepository;
